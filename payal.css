@@ -1,0 +1,384 @@
+
+@font-face {
+  font-family: 'Flanella';
+  src: url('Flanella.ttf');
+}
+
+/*  --- HOME PAGE --- */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+header, .pic2{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed; 
+}
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url(images/rose.png);
+  min-height: 100%;
+  height: 100vh;
+  background-position: center; 
+  background-size: cover;
+}
+
+ul{
+  float: left;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+ul li{
+  display: inline-block;
+  color: #ffffff;
+}
+
+ul li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px 20px;
+  transition: 0.7s ease;
+  font-family: 'Quicksand', sans-serif;
+}
+
+ul li a:hover{
+  background-color: #ffffff;
+  border: #ffffff;
+  color: #2f2f30;
+}
+.name{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0,0,0,0.1);
+  border: 6px double #ffffff;
+}
+.name h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 70px;
+  padding: 5px 20px;
+}
+.name p{
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.pic2{
+  background-image: url(images/name2.jpg);
+  opacity: 0.85;
+  min-width: 100%;
+  height: 100%;
+  min-height: 500px;
+  background-position: center; 
+  background-size: cover;
+}
+
+
+
+
+
+/*  ########## HELLO THERE SECTION ########## */
+
+/*  --- HELLO THERE --- */
+* {
+  box-sizing: border-box;
+}
+.hello{
+  font-family: 'Flanella';
+  font-size: 90px;
+  color: #000000;
+}
+.welcome h2{
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
+}
+.paragraph{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+.welcome{
+  padding: 20px 35px 20px 35px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/*  --- STACKING PHOTOS --- */
+.stack{
+  float: left;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 10px;
+  display: grid;
+  max-width: 525px;
+}
+.top{
+  grid-column: 2/span 6;
+  grid-row: 1/span 7;
+}
+.bottom{
+  grid-column: 1/span 6;
+  grid-row: 2/span 8;
+}
+
+/*  --- TEXT --- */
+.para{
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.welcome {
+  overflow: auto;
+}
+.top{
+  opacity: 0.78;
+}
+.bottom{
+  opacity: 0.99;
+}
+
+/*  --- LEARN MORE BUTTON --- */
+.learn{
+  padding-top: 20px;
+  text-align: center;
+}
+.button {
+  display: inline-block;
+  background-color: #c54c38;
+  color: #FFFFFF;
+  text-align: center;
+  border: none;
+  font-size: 15px;
+  padding: 15px;
+  width: 200px;
+}
+
+.button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*  ########## ADVENTURE SECTION ########## */
+/*  --- SECTION CHOOSE YOUR ADVENTURE --- */
+* {
+  box-sizing: border-box;
+}
+
+.one{
+  padding: 30px 30px;
+  background-color: #6d8294 ;
+}
+
+p.choose{
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.adventure{
+  font-family: 'Flanella';
+  font-size: 90px;
+  line-height: 95%;
+  vertical-align: top;
+  color: #FFFFFF;
+}
+.row{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.item{
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 25%;
+}
+
+@media screen and (max-width: 900px){
+  .item{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item {
+    width: 100%;
+  }
+}
+
+/* Clearfix */
+.one {
+  overflow: auto;
+}
+
+.item:hover {
+  opacity: .5;
+}
+
+/*  ########## MINI PHOTO GALLERY SECTION ########## */
+.photos{
+  text-align: center;
+  background-color: #c54c38;
+  padding: 40px 50px 40px 50px;
+}
+.getme{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.fancytext{
+  font-family: 'Flanella';
+  font-size: 50px;
+  color: #FFFFFF;
+}
+
+.regtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 150%;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.funfact{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.flip-box {
+  vertical-align: middle;
+  background-color: transparent;
+  float: left;
+  width: 33.3%;
+  height: 200px;
+  perspective: 1000px;
+  padding: 2px 2px 2px 2px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,.flip-box-front-two, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #c54c38;
+  color: white;
+}
+.flip-box-front-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 30px double rgba(225, 225, 225, 0.3);
+  background-color: #c54c38;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: #FFFFFF;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 900px){
+  .flip-box{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .flip-box {
+    width: 100%;
+  }
+}
+
+/* Clearfix (clear floats) */
+.photos {
+  overflow: auto;
+}
+
+
+
+.abstract{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sevilla{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*  ########## FOOTER SECTION ########## */
+/*  --- FOOTER --- */
+.line{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer{
+  text-align: center;
+  padding: 50px 80px;
+  line-height: 1.2em;
+  background-color: #2F4550;
+  color: #ffffff
+}
