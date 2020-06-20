@@ -86,7 +86,7 @@ ul li a:hover{
 
 @media screen and (max-width: 500px) {
   header{
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url(images/rose2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url(images/rose2.JPG);
     background-attachment:scroll;
   }
   .name{
