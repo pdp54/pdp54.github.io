@@ -295,6 +295,24 @@ p.choose{
   font-size: 25px;
   color: #FFFFFF;
 }
+
+/*###BACKSIDE FONT###*/
+.fancytext2{
+  font-family: 'Flanella';
+  font-size: 45px;
+  color: #000000;
+}
+
+.regtext2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 150%;
+  font-size: 15px;
+  color: #0000000;
+}
 .funfact{
   position: absolute;
   top: 50%;
